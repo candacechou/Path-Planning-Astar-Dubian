@@ -11,7 +11,7 @@ def main(solution_function, plot=False, verbose=False):
     '''E: circular obstacles'''
 
     # file name
-    obsl = dir + "/circ_obs.json"
+    obsl = dir + "/env/circ_obs.json"
 
     # load list of circular obstacle configurations
     with open(obsl) as f:
@@ -27,7 +27,7 @@ def main(solution_function, plot=False, verbose=False):
     '''C: line obstacles'''
 
     # file name
-    obsl = dir + "/line_obs.json"
+    obsl = dir + "/env/line_obs.json"
 
     # load list of circular obstacle configurations
     with open(obsl) as f:
@@ -135,8 +135,8 @@ if __name__ == "__main__":
 
     # argument parser
     p = ArgumentParser()
-    p.add_argument('-p', action='store_true')
-    p.add_argument('-v', action='store_true')
+    p.add_argument('-p', action='store_true',help="save the result.")
+    p.add_argument('-v', action='store_true', help="verbose")
     args = p.parse_args()
 
     # evaluate solution
