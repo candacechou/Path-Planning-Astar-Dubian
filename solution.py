@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# {student full name}
-# {student id}
-# {student email}
+# {Candace Chou}
+# {chchou@kth.se}
 import numpy as np
 import math
 from operator import attrgetter
@@ -178,18 +177,5 @@ def solution(car):
 
             openset.removeset(current)
             closeset.addset(current)
-
-    #print ("controls:")
-    #print (controls)
-    #print("times")
-    #print(times)
-
-
-
-
-
-
-
-    ''' <<< write your code below >>> '''
 
     return controls, times
